@@ -20,6 +20,8 @@ import { ColetivosProvider } from './contexts/coletivos';
 import { HomepageProvider } from './contexts/homepage';
 import { PublicacoesProvider } from './contexts/publicacoes';
 import { ProjectProvider } from './contexts/project';
+import { UfrjpageProvider } from './contexts/ufrj'; 
+import { EbapageProvider } from './contexts/eba';
 
 const Routes = () => {
     return (
@@ -29,26 +31,30 @@ const Routes = () => {
                     <HomepageProvider>
                         <PublicacoesProvider>
                             <ProjectProvider>
-                                <BrowserRouter>
-                                    <Header />
+                                <UfrjpageProvider>
+                                    <EbapageProvider>
+                                        <BrowserRouter>
+                                            <Header />
 
-                                    <Switch>
-                                        <Route exact path="/" component={Home} />
-                                        <Route path="/EBA" component={EBA} />
-                                        <Route path="/projeto" component={Projeto} />
-                                        <Route path="/contato" component={Contato} />
-                                        <Route path="/artistas" component={Artistas} />
-                                        <Route path="/artista/:id" component={Artista} />
-                                        <Route path="/publicacoes" component={Publicacoes} />
-                                        <Route path="/pesquisadores" component={Pesquisadores} />
-                                        <Route path="/cidade_universitaria" component={CidadeUniversitaria} />
-                                        <Route path="/coletivo/:id" component={Coletivo} />
-                                        <Route path="/coletivos" component={Coletivos} />
-                                        <Route path="/entrevistas" component={Entrevistas} />
-                                    </Switch>
+                                            <Switch>
+                                                <Route exact path="/" component={Home} />
+                                                <Route path="/EBA" component={EBA} />
+                                                <Route path="/projeto" component={Projeto} />
+                                                <Route path="/contato" component={Contato} />
+                                                <Route path="/artistas" component={Artistas} />
+                                                <Route path="/artista/:id" component={Artista} />
+                                                <Route path="/publicacoes" component={Publicacoes} />
+                                                <Route path="/pesquisadores" component={Pesquisadores} />
+                                                <Route path="/cidade_universitaria" component={CidadeUniversitaria} />
+                                                <Route path="/coletivo/:id" component={Coletivo} />
+                                                <Route path="/coletivos" component={Coletivos} />
+                                                <Route path="/entrevistas" component={Entrevistas} />
+                                            </Switch>
 
-                                    <Footer />
-                                </BrowserRouter>
+                                            <Footer />
+                                        </BrowserRouter>
+                                    </EbapageProvider>
+                                </UfrjpageProvider>
                             </ProjectProvider>
                         </PublicacoesProvider>
                     </HomepageProvider>

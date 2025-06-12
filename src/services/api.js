@@ -6,7 +6,9 @@ const apiSufix = {
     coletivo: 'coletivos',
     home: 'homepage',
     posts: 'publicacoes',
-    project: 'projeto'
+    project: 'projeto',
+    ufrj: 'ufrj',
+    eba: 'eba',
 }
 
 const url = {
