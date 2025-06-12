@@ -39,9 +39,13 @@ export default class Footer extends Component {
                         <a href="https://www.behance.net/joaopedros1520" target="_blank">
                             João Pedro
                         </a>
-                        e
+                        ,
                         <a href="https://github.com/evelyncorrea" target="_blank">
                             Evelyn Ferreira
+                        </a>
+                        e
+                        <a href="https://github.com/ThiagoBarcellos" target="_blank">
+                            Thiago Barcellos
                         </a>
                     </Grid>
                     <Grid item xs={4}>

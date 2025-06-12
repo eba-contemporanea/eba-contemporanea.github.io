@@ -83,7 +83,7 @@ export function Artista() {
 
                             {info?.estudos && (
                                 <div className="artista_more_info">
-                                    <p>Formações:</p>
+                                    <p>Formações na EBA:</p>
                                     <b>
                                         {info?.estudos.map(i => (
                                             `${i.tipo} em ${i.area} (${i.anoInicio || "-"} - ${i.anoFim || "atualmente"}); `
@@ -145,7 +145,7 @@ export function Artista() {
 
                             {info?.links?.length > 0 && (
                                 <div className='border_links column nav_artistas'>
-                                    <h2>Detalhes Acadêmicos</h2>
+                                    <h2>Links Acadêmicos</h2>
                                     {info?.links?.map(i => (
                                         <a key={i.id} className='nav_link button_hover' href={i.url} >
                                             <FontAwesomeIcon icon={faPaperPlane} className='button-left' />

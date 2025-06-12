@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Slider from '../../Components/Slider';
 import useProject from '../../contexts/project';
 import './Projeto.css';
+import '../../Components/Header/Header_style.css';
 
 export default function Projeto(){
     const { 
@@ -25,6 +26,11 @@ export default function Projeto(){
                 <p className='p_normal p_bold'>
                     {boldText}
                 </p>
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'right', marginTop: '1rem' }}>
+                    <a href={'https://www.youtube.com/@EBACONTEMPORANEA'} target="_blank" className='social_media_icon'>
+                        <img src='/btnYoutube.svg' width="100%" />
+                    </a>
+                </div>
             </main>
         </>
     ) 
