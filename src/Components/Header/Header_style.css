@@ -20,44 +20,36 @@ a {
 	align-items: center;
 	justify-content: space-between;
 
-	max-width: 1024px;
+	max-width: 1200px;
 	margin: auto;
 }
 
 .logos {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	max-width: 160px;
+  position: relative;
+  width: 160px;
+  height: 25px;
 }
 
-a #logo2 {
-	display: none;
+#logo, #logo2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#logo2 {
+  opacity: 0;
+  transform: scale(0.95);
 }
 
 a:hover #logo {
-	animation-delay: 0.1s;
-	animation: logoanimation 0.3s ease-out forwards;
+  opacity: 0;
+  transform: scale(1.05);
 }
 
 a:hover #logo2 {
-	display: block;
-	transform: translateX(-30px);
-}
-
-@keyframes logoanimation {
-	from {
-		opacity: 100%;
-		display: block;
-		transform: translateX(-10px);
-	}
-
-	to {
-		opacity: 0%;
-		display: none;
-		transform: translateX(-50px);
-	}
+  opacity: 1;
+  transform: scale(1);
 }
 
 .social_media {
