@@ -12,7 +12,7 @@ const apiSufix = {
 }
 
 const url = {
-    prod: "https://ebac.fly.dev",
+    prod: "https://ebacontemporanea-api.onrender.com",
     local: "http://localhost:4000"
 }
 
