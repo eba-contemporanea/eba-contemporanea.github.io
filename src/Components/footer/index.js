@@ -37,7 +37,7 @@ export default class Footer extends Component {
                     <Grid item xs={4}>
                         <i>Desenvolvido por:</i>
                         <a href="https://www.behance.net/joaopedros1520" target="_blank">
-                            João Pedro
+                            João Pedro Santos
                         </a>
                         ,
                         <a href="https://github.com/evelyncorrea" target="_blank">

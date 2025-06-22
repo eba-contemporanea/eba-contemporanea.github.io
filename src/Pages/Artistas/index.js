@@ -95,6 +95,12 @@ export default function Artistas() {
                             onChange={searchArtists}
                             onKeyDown={searchArtists}
                         />
+
+                        {isLoading && (
+                            <div className="mini-loading">
+                                <CircularProgress size={20} style={{ color: '#D60000' }} />
+                            </div>
+                        )}
                     </div>
                     <Grid container spacing={5}>
                         {artists?.length > 0 ? artists.map(i => (

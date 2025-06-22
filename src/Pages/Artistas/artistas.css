@@ -47,3 +47,9 @@
 .search-filter {
     width: 260px;
 }
+
+.mini-loading {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
